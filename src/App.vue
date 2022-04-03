@@ -6,7 +6,7 @@
       <span class="button" v-on:click="onBuy">Buy</span>
       <input v-model="amount" placeholder="Please input amount" :class="(validateValue && 'error') + ' input'"  />
       <p v-if="pending">Pending now...</p>
-      <div v-else>
+      <div v-else> 
         <div style="padding: 20px" v-if="Object.keys(eventValue).length">
           <p>Buyer: {{buyer}}</p>
           <p>Amount: {{buyAmount}} ether</p>
